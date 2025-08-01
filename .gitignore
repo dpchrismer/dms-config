@@ -1,0 +1,14 @@
+# General
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# IDEs
+.idea/
+*.iml
