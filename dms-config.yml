@@ -78,3 +78,38 @@ documentClasses:
       - name: legalHoldDate
         type: date
         required: true
+  HRDoc:
+    requiredMetadata:
+      - name: employeeId
+        type: string
+        required: true
+      - name: lastName
+        type: string
+        required: true
+      - name: firstName
+        type: string
+        required: true
+      - name: streetAddress
+        type: string
+        required: true
+      - name: city
+        type: string
+        required: true
+      - name: stateOrProvince
+        type: string
+        required: false
+      - name: postalCode
+        type: string  
+        required: false
+      - name: countryCode
+        type: string
+        required: true
+      - name: documentTypeCode
+        type: string
+        required: true
+      - name: sourceSystem
+        type: string
+        required: true
+      - name: sourceSystemCreationDate
+        type: date
+        required: true
