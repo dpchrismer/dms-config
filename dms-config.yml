@@ -1,0 +1,80 @@
+documentClasses:
+  Shipping:
+    retentionDays: 365
+    requiredMetadata:
+      - name: trackingNumber
+        type: string
+        required: true
+      - name: carrier
+        type: string
+        required: true
+      - name: shipmentDate
+        type: date
+        required: true
+      - name: sourceSystem
+        type: string
+        required: true
+      - name: sourceSystemCreationDate
+        type: date
+        required: true
+      - name: documentTypeCode
+        type: string
+        required: true
+      - name: transportingCompany
+        type: string
+        required: true
+      - name: destinationCountryCode
+        type: string
+        required: true
+    optionalMetadata:
+      - name: formCode
+        type: string
+        required: false
+      - name: retentionDate
+        type: date
+        required: false
+      - name: legalHold
+        type: boolean
+        required: false
+      - name: legalHoldDate
+        type: date
+        required: false
+      - name: deliveryStatus
+        type: string
+        required: false
+      - name: origin-station-code
+        type: string
+        required: false
+      - name: destination-station-code
+        type: string
+        required: false
+  Revenue:
+    retentionDays: 2555
+    requiredMetadata:
+      - name: customerAccountNumber
+        type: string
+        required: true
+      - name: invoiceNumber
+        type: string
+        required: true
+      - name: invoiceDate
+        type: date
+        required: true
+      - name: sourceSystem
+        type: string
+        required: true
+      - name: sourceSystemCreationDate
+        type: date
+        required: true
+      - name: documentTypeCode
+        type: string
+        required: true
+      - name: countryCode
+        type: string
+        required: true
+      - name: legalHold
+        type: boolean
+        required: true
+      - name: legalHoldDate
+        type: date
+        required: true
